@@ -15,7 +15,7 @@
     "co": "^3.1.0",
     "component-flatten": "^1.0.1",
     "component-manifest": "^1.0.0",
-    "component-require2": "^1.0.1",
+    "component-require2": "git://github.com/strongview/require2#standalone/require",
     "cp": "^0.1.1",
     "debug": "*",
     "generator-supported": "~0.0.1",
