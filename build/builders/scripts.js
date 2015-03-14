@@ -656,15 +656,15 @@ Scripts.prototype.register = wrapGenerator.mark(function(file) {
         js = js.replace(/\\n/g, '\\n\\\n');
         js = 'require.register("'
           + name
-          + '", Function("exports, module, require",\n'
+          + '", Function("exports, module, require",'
           + js
-          + '\n));';
+          + '));';
       } else {
         js = 'require.register("'
           + name
-          + '", function (exports, module, require) {\n'
+          + '", function (exports, module, require) {'
           + js
-          + '\n});';
+          + '});';
       }
 
       return $ctx1.abrupt("return", js);
